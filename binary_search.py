@@ -88,6 +88,7 @@ def higher(xs, x):
         return go(left, right)
     return go(0, len(xs) - 1)
 
+
 def count_repeats(xs, x):
     '''
     Assume that xs is a list of numbers sorted from HIGHEST to LOWEST,
@@ -114,7 +115,7 @@ def count_repeats(xs, x):
     '''
     low = lower(xs, x)
     high = higher(xs, x)
-    return hight - low
+    return high - low
 
 
 def argmin(f, lo, hi, epsilon=1e-3):
